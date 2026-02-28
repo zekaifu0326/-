@@ -1,0 +1,8 @@
+{
+  "name": "留学生小灶 (Student Kitchen)",
+  "description": "A dedicated recipe sharing and discovery app for students abroad, featuring AI-powered cooking assistance and a vibrant community.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
