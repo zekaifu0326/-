@@ -12,7 +12,7 @@ const RecipeDetail: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   React.useEffect(() => {
-    fetch(`/api/recipes/${id}`)
+    fetch(`${import.meta.env.VITE_API_URL || ''}/api/recipes/${id}`)
       .then(res => res.json())
       .then(data => {
         setRecipe(data);

@@ -46,7 +46,7 @@ const CreatePost: React.FC = () => {
     if (!title) return alert('请先输入菜名');
     setPublishing(true);
     try {
-      const response = await fetch('/api/recipes', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/recipes`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

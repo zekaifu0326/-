@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   React.useEffect(() => {
-    fetch('/api/recipes')
+    fetch(`${import.meta.env.VITE_API_URL || ''}/api/recipes`)
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data)) setRecipes(data);
